@@ -50,30 +50,29 @@ console.log(cart);
 //6.
 
 let company= {
-    name : "IT solutions",
-    departments :{
-
-        HR :{
-            manager : "John",
-            Employees : 20,
+    name : "A2 Company",
+    departments :[
+        {
+            id:101,
+            name : "Finance",
+            description : "Finance Department",
         },
-
-        IT :{
-            manager : "Nitish",
-            Employees :30,
+        {
+            id:102,
+            name : "HR",
+            description : "IT Department",
         }
 
-    }
+    ]
 };
 
 console.log(company);
 for (let key in company){
     console.log(key, company[key]);
 } 
-for(let dept in company.departments){
-    console.log("Department:",dept)
+for(let dep in company.departments){
+    console.log(dep, company.departments[dep]);
 }
-
 console.log(company.departments?.Finance?.manager);
 
 //7.
@@ -110,8 +109,6 @@ console.log(movie);
 console.log(product);
 console.log(userProfile1);
 
-
-//9.
 console.log(Object.keys(movie));
 console.log(Object.values(movie));
 console.log(Object.entries(movie));
